@@ -70,6 +70,20 @@ StringBuilder varcode = new StringBuilder();
 	}
 	
 	private static String VBEncode(int num) {
+<<<<<<< HEAD
+=======
+		StringBuilder varcode = new StringBuilder();
+		String[] bytes = bytesBlock(Integer.toBinaryString(num));
+		for (int i = 0; i < bytes.length - 1; i++)
+			varcode.append('0').append(bytes[i]);
+		varcode.append('1').append(bytes[bytes.length - 1]);
+		return varcode.toString();
+		int var = 5;
+		System.out.println("World");
+		int sss = 5;
+		System.out.println("1231245145");
+		System.out.println(sss);
+>>>>>>> origin/master
 	}
 
 	/*
