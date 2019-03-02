@@ -68,6 +68,8 @@ public class Main {
 			varcode.append('0').append(bytes[i]);
 		varcode.append('1').append(bytes[bytes.length - 1]);
 		return varcode.toString();
+		int var = 5;
+		System.out.println("World");
 	}
 
 	/*
