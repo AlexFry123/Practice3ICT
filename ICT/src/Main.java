@@ -52,6 +52,14 @@ public class Main {
 			resu += tst;
 		}*/
 		System.out.println(resu + " " + resu.length());
+StringBuilder varcode = new StringBuilder();
+		String[] bytes = bytesBlock(Integer.toBinaryString(num));
+		for (int i = 0; i < bytes.length - 1; i++)
+			varcode.append('0').append(bytes[i]);
+		varcode.append('1').append(bytes[bytes.length - 1]);
+		return varcode.toString();
+		int var = 5;
+		System.out.println("World");
 	}
 
 	private static void doSomething(){
@@ -62,14 +70,6 @@ public class Main {
 	}
 	
 	private static String VBEncode(int num) {
-		StringBuilder varcode = new StringBuilder();
-		String[] bytes = bytesBlock(Integer.toBinaryString(num));
-		for (int i = 0; i < bytes.length - 1; i++)
-			varcode.append('0').append(bytes[i]);
-		varcode.append('1').append(bytes[bytes.length - 1]);
-		return varcode.toString();
-		int var = 5;
-		System.out.println("World");
 	}
 
 	/*
