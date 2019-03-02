@@ -7,6 +7,7 @@ import java.io.IOException;
 public class Main {
 
 	public static void main(String[] args) throws IOException {
+		doSomething();
 		System.out.println("Hello i'm Java-project for ICT!");
 		String str = "automata";
 		int a = 16256;
@@ -51,6 +52,13 @@ public class Main {
 			resu += tst;
 		}*/
 		System.out.println(resu + " " + resu.length());
+	}
+
+	private static void doSomething(){
+		int x = 5;
+		String string = "123";
+		System.out.println("Hello World");
+		System.out.println(x + string);
 	}
 	
 	private static String VBEncode(int num) {
